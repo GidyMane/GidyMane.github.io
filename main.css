@@ -20,6 +20,7 @@ body{
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
+    background-blend-mode:color-dodge;
 }
 .header-text span{
     color: #11de2c;
