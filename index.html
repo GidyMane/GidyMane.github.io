@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/4ea38d57d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div class="header">
+           
+            <div class="navbar">
+                <nav>
+                    <img src="./images/M(1).png" alt="" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>SOFTWARE ENGINEER</p>
+                    <h1>Hi, I'm <span>Gideon</span><br> A backend developer.</h1>
+                </div>
+                
+            </div>
+          
+
+        </div>
+<!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/gidy.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly skilled backend web developer with extensive experience crafting robust and versatile APIs. I leverage a diverse technology stack, including Python, Node.js, and C#, to design and implement APIs that meet complex business needs. My proficiency in RESTful principles and various frameworks ensures clean, efficient, and developer-friendly interfaces.
+                        Beyond API development, I possess a well-rounded skillset encompassing data analysis and proficiency in SQL. This allows me to seamlessly integrate data manipulation and analysis into my projects, delivering results-driven solutions.
+
+Driven by a passion for technology and its potential to make a positive impact, I constantly seek opportunities for growth and innovation. I'm a fast learner who thrives in challenging environments and is dedicated to professional development, always eager to acquire new skills and adapt to evolving technologies.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>API DEVELEOPMENT</span><br> Developing restful apis using stack like c sharp and django rest framework</li>
+                            <li><span>WEB DEVELOPER</span><br> Developing webs apps using react and next js</li>
+                            <li><span>DATA ANALYST</span><br> Data analysis using python</li>
+                            <li><span>BACKEND DEVELOPER</span><br> Developing backend apps using stack like node, django and c sharp</li>
+                            <li><span>OTHER</span><br>SQL, Database management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FINTECH-GROUP</span> <span> 2023</span><br>Worked as a software developer intern</li>
+                            <li><span>TUNT</span> <span> 2023</span><br>TUNT Backend developer.Developing apis for the TUNT application</li>
+                            <li><span> MINISTRY Of AGRICULTURE 2023</span><br>Worked as aan IT support.Managed network infrastructure in the organization</li>
+                            <li> <span>GAMEZONE REPAIRS AND MAINTENANCE 2023-PRESENT</span><br>Worked as an IT consultant.Maintained and repaired computer software and hardware</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SOFTWARE ENGINEERING</span><span>2023</span> <br>Moringa School </li>
+                            <li><span>SOFTWARE DEVELOPMENT</span><span> 2019-2023</span> <br>KCA UNIVERSITY RUARAKA </li>
+                            <li><span>DATA ANALYSIS</span> <span> 2023</span><br>Alx Udacity </li>
+                            <li><span>INTERNATIONAL DIGITAL COMPUTER LITERACY</span> <span> 2019</span><br>East African Institute of Certified studies</li>
+                            <li><span>KCSE</span> <span> 2014-2018</span> <br>The Nyahururu High school</li>
+                            <li><span>KCPE</span> <span>2006-2014</span> <br>Nyandarau Boarding Primary School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- My projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="./images/Asana vs_ Trello vs.jpg" alt="">
+                    <div class="layer">
+                        <h3>Attachee management system</h3>
+                        <p>The Attaché Management System is a web application built using the Django framework, designed to streamline and automate the management of attachés within an organization. This system provides a centralized platform for managing attaché profiles, assignments, and related information efficiently.</p>
+                        <a href="https://github.com/mark-kibo/REPORT-GENERATOR-FOR--SUPERVISORS/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Smart Parking Solutions.png" alt="">
+                    <div class="layer">
+                        <h3>Parking reservation system</h3>
+                        <p>A parking reservation system created using Django is a web application that allows users to reserve parking spaces in advance. It provides a convenient and efficient way for users to secure parking spots, eliminating the hassle of searching for parking upon arrival.</p>
+                        <a href="https://github.com/mark-kibo/reservespace"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Gallery of Hoki Museum _ Nikken Sekkei - 19.jpg" alt="">
+                    <div class="layer">
+                        <h3>Art gallery management system</h3>
+                        <p>An art gallery management system is a software application designed to streamline and automate various tasks involved in the management of an art gallery. It provides a centralized platform to efficiently manage the gallery's operations, including artwork inventory, artist information, sales, exhibitions, and customer interactions. Here is a description of the key features and functionalities typically found in an art gallery management system</p>
+                        <a href="https://github.com/mark-kibo/artgallery_with_django"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="https://github.com/GidyMane" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-1">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>muragegideon2000@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+254798813315</p>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="./documents/GIDEONCV.pdf"  class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-col-2">
+                    <form action="">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" id="" placeholder="your email">
+                        <textarea name="message"   rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>copyright <i class="fa-solid fa-copyright"></i> Mane Software</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        const opentab =(tabname)=>{
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            } 
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }  
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById('sidemenu');
+        const openmenu=()=>{
+            sidemenu.style.right= "0";
+        }
+        const closemenu=()=>{
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
