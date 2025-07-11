@@ -528,6 +528,12 @@ section {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
 .project-card {
   background: white;
   border-radius: 12px;
