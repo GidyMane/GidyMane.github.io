@@ -1,182 +1,668 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Gideon Murage - Software Developer</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4ea38d57d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">GM</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="./documents/GIDEONCV.pdf"
+              class="nav-link resume-btn"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
-    <script src="https://kit.fontawesome.com/4ea38d57d2.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-        <div class="header">
-           
-            <div class="navbar">
-                <nav>
-                    <img src="./images/logooo.PNG" alt="" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>SOFTWARE ENGINEER</p>
-                    <h1>Hi, I'm <span>Gideon</span><br> A Software Engineer.</h1>
-                </div>
-                
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hi there! I'm</p>
+            <h1 class="hero-name">Gideon Murage</h1>
+            <h2 class="hero-title">Software Developer</h2>
+            <p class="hero-description">
+              Passionate software engineer specializing in building scalable,
+              efficient, and impactful software solutions. Currently
+              contributing to agricultural technology innovation at KALRO under
+              the Presidential Digital Talent Programme.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Let's Connect</a>
             </div>
-          
-
-        </div>
-<!-- About section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/Gideon Photo 1.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Highly skilled backend web developer with extensive experience crafting robust and versatile APIs. I leverage a diverse technology stack, including Python, Node.js, and C#, to design and implement APIs that meet complex business needs. My proficiency in RESTful principles and various frameworks ensures clean, efficient, and developer-friendly interfaces.
-                        Beyond API development, I possess a well-rounded skillset encompassing data analysis and proficiency in SQL. This allows me to seamlessly integrate data manipulation and analysis into my projects, delivering results-driven solutions.
-
-Driven by a passion for technology and its potential to make a positive impact, I constantly seek opportunities for growth and innovation. I'm a fast learner who thrives in challenging environments and is dedicated to professional development, always eager to acquire new skills and adapt to evolving technologies.
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>API DEVELEOPMENT</span><br> Developing restful apis using stack like c sharp and django rest framework</li>
-                            <li><span>WEB DEVELOPER</span><br> Developing webs apps using react and next js</li>
-                            <li><span>DATA ANALYST</span><br> Data analysis using python</li>
-                            <li><span>BACKEND DEVELOPER</span><br> Developing backend apps using stack like node, django and c sharp</li>
-                            <li><span>OTHER</span><br>SQL, Database management</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>FINTECH-GROUP</span> <span> 2023</span><br>Worked as a software developer intern</li>
-                            <li><span>TUNT</span> <span> 2023</span><br>TUNT Backend developer.Developing apis for the TUNT application</li>
-                            <li><span> MINISTRY Of AGRICULTURE 2023</span><br>Worked as aan IT support.Managed network infrastructure in the organization</li>
-                            <li> <span>GAMEZONE REPAIRS AND MAINTENANCE 2023-PRESENT</span><br>Worked as an IT consultant.Maintained and repaired computer software and hardware</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>SOFTWARE ENGINEERING</span><span>2023</span> <br>Moringa School </li>
-                            <li><span>SOFTWARE DEVELOPMENT</span><span> 2019-2023</span> <br>KCA UNIVERSITY RUARAKA </li>
-                            <li><span>DATA ANALYSIS</span> <span> 2023</span><br>Alx Udacity </li>
-                            <li><span>INTERNATIONAL DIGITAL COMPUTER LITERACY</span> <span> 2019</span><br>East African Institute of Certified studies</li>
-                            <li><span>KCSE</span> <span> 2014-2018</span> <br>The Nyahururu High school</li>
-                            <li><span>KCPE</span> <span>2006-2014</span> <br>Nyandarau Boarding Primary School</li>
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="hero-social">
+              <a
+                href="https://github.com/GidyMane"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gidy-mane-42829b262"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:muragegideon2000@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
             </div>
-        </div>
-    </div>
-    <!-- My projects -->
-    <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="project-list">
-                <div class="work">
-                    <img src="./images/Asana vs_ Trello vs.jpg" alt="">
-                    <div class="layer">
-                        <h3>Attachee management system</h3>
-                        <p>The Attaché Management System is a web application built using the Django framework, designed to streamline and automate the management of attachés within an organization. This system provides a centralized platform for managing attaché profiles, assignments, and related information efficiently.</p>
-                        <a href="https://github.com/GidyMane/Report-Generator"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/Smart Parking Solutions.png" alt="">
-                    <div class="layer">
-                        <h3>Parking reservation system</h3>
-                        <p>A parking reservation system created using Django is a web application that allows users to reserve parking spaces in advance. It provides a convenient and efficient way for users to secure parking spots, eliminating the hassle of searching for parking upon arrival.</p>
-                        <a href="https://github.com/GidyMane/ReserveParking-"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/Gallery of Hoki Museum _ Nikken Sekkei - 19.jpg" alt="">
-                    <div class="layer">
-                        <h3>Art gallery management system</h3>
-                        <p>An art gallery management system is a software application designed to streamline and automate various tasks involved in the management of an art gallery. It provides a centralized platform to efficiently manage the gallery's operations, including artwork inventory, artist information, sales, exhibitions, and customer interactions. Here is a description of the key features and functionalities typically found in an art gallery management system</p>
-                        <a href="https://github.com/GidyMane/Artgallery"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F263ada99a8bf4f33aca1312fafcc718d%2F77dca5341cdc4dafb8ae50f790ec9daa?format=webp&width=800"
+                alt="Gideon Murage"
+                class="hero-img"
+              />
+              <div class="image-decoration"></div>
             </div>
-            <a href="https://github.com/GidyMane" class="btn">See More</a>
+          </div>
         </div>
-    </div>
-    <!-- contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-col-1">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>muragegideon2000@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+254798813315</p>
-                    <div class="social-links">
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                        <a href=""><i class="fa-brands fa-square-github"></i></a>
-                    </div>
-                    <a href="./documents/GIDEONCV.pdf"  class="btn btn-2">Download CV</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              I am a passionate software engineer with expertise in both backend
+              and frontend development, specializing in building scalable,
+              efficient, and impactful software solutions that drive business
+              success. Currently playing a crucial role in supporting client
+              implementations, troubleshooting complex product issues, and
+              enhancing system performance at the Kenya Agricultural and
+              Livestock Research Organization (KALRO).
+            </p>
+            <p class="about-description">
+              As part of the Presidential Digital Talent Programme (PDTP), I
+              assist in developing and maintaining KALRO's internal web and
+              mobile applications, engage with farmers to collect agricultural
+              data, and contribute to the organization's software development
+              life cycle (SDLC) and system architecture.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <div>
+                  <h4>Full-Stack Development</h4>
+                  <p>MERN Stack, Django, .NET, React Native</p>
                 </div>
-                <div class="contact-col-2">
-                    <form action="">
-                        <input type="text" name="Name" placeholder="name" required>
-                        <input type="email" name="email" id="" placeholder="your email">
-                        <textarea name="message"   rows="6" placeholder="your message"></textarea>
-                        <button type="submit" class="btn btn-2">Submit</button>
-                    </form>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-database"></i>
+                <div>
+                  <h4>Database Management</h4>
+                  <p>PostgreSQL, MongoDB, MySQL, T-SQL</p>
                 </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-cloud"></i>
+                <div>
+                  <h4>DevOps & Cloud</h4>
+                  <p>Azure DevOps, Git, CI/CD, Version Control</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div id="copyright">
-            <p>copyright <i class="fa-solid fa-copyright"></i> Mane Software</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
         </div>
-    </div>
+        <div class="skills-content">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">.NET</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Django REST Framework</span>
+              <span class="skill-tag">API Development</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Database</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">NoSQL</span>
+              <span class="skill-tag">T-SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Tools & Others</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Azure DevOps</span>
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">Project Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">My career journey</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2025 - Present</div>
+              <h3 class="timeline-title">Software Developer</h3>
+              <h4 class="timeline-company">
+                Kenya Agricultural and Livestock Research Organization (KALRO)
+              </h4>
+              <p class="timeline-description">
+                Placed under the Presidential Digital Talent Programme (PDTP) by
+                ICT Authority (ICTA). Assisting in the development and
+                maintenance of KALRO's internal web and mobile applications,
+                engaging with farmers to collect agricultural data, and
+                supporting system testing and enhancements.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">March - Oct 2024</div>
+              <h3 class="timeline-title">Software Developer</h3>
+              <h4 class="timeline-company">
+                Program to Build Resilience for Food and Nutrition Security
+                (BREFONS)
+              </h4>
+              <p class="timeline-description">
+                Developed a Management Information System (MIS) for a government
+                initiative supporting farmers in Kenya. Built using React for
+                the frontend and Django for the backend, with PostgreSQL for
+                data management.
+              </p>
+              <a
+                href="https://mis.brefons.co.ke"
+                class="timeline-link"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i> mis.brefons.co.ke
+              </a>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan - May 2024</div>
+              <h3 class="timeline-title">IT Intern</h3>
+              <h4 class="timeline-company">
+                Ministry of Agriculture – Kilimo House
+              </h4>
+              <p class="timeline-description">
+                Provided technical support and assisted in maintaining the
+                ministry's ICT infrastructure. Collaborated with the ICT team to
+                improve workflow efficiency and system reliability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-image">
+              <img
+                src="./images/field-service.jpg"
+                alt="Dispatch Rhino"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">MERN Stack</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Dispatch Rhino - Field Service Management
+              </h3>
+              <p class="project-description">
+                A comprehensive field service management platform empowering
+                companies to efficiently manage technicians, dispatchers, job
+                scheduling, and payment processes. Features real-time job
+                tracking, workflow automation, and seamless payment integration.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/GidyMane"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/rentershub.jpg"
+                alt="RentersHub"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">RentersHub</h3>
+              <p class="project-description">
+                A rental property management platform enabling landlords to list
+                properties and tenants to find rentals. Features user
+                authentication, property listings, and payment tracking.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://rentershub.co.ke"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Site
+                </a>
+                <a
+                  href="https://github.com/GidyMane"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/workscout.jpg"
+                alt="WorkScout UK"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">WorkScout UK</h3>
+              <p class="project-description">
+                A job-matching platform connecting job seekers with employers in
+                the UK. Features user registration, job listings, application
+                tracking, and admin dashboards.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://workscout-ui.vercel.app"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Site
+                </a>
+                <a
+                  href="https://github.com/GidyMane"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/brefons.jpg"
+                alt="BREFONS MIS"
+                onerror="this.style.display='none'"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                BREFONS Management Information System
+              </h3>
+              <p class="project-description">
+                A government initiative MIS for supporting farmers in Kenya.
+                Includes modules for registration, monitoring, reporting, and
+                fund disbursement with a focus on security and scalability.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://mis.brefons.co.ke"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-cta">
+          <a
+            href="https://github.com/GidyMane"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            View All Projects on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-subtitle">
+            I'm always open to new opportunities and interesting projects
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:muragegideon2000@gmail.com"
+                  >muragegideon2000@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <a href="tel:+254798813315">+254 798 813 315</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Nairobi, Kenya</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a
+                href="https://github.com/GidyMane"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gidy-mane-42829b262"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:muragegideon2000@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <div class="resume-download">
+              <a
+                href="./documents/GIDEONCV.pdf"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form
+              action="mailto:muragegideon2000@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Gideon Murage. All rights reserved.</p>
+          <p>Built with passion and dedication to excellence.</p>
+        </div>
+      </div>
+    </footer>
 
     <script>
-        var tablinks= document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
+      // Mobile menu toggle
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navMenu = document.getElementById("nav-menu");
 
-        const opentab =(tabname)=>{
-            for(tablink of tablinks){
-                tablink.classList.remove('active-link');
-            } 
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove('active-tab');
-            }  
-            event.currentTarget.classList.add('active-link');
-            document.getElementById(tabname).classList.add('active-tab');
-        }
+      mobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.toggle("is-active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          mobileMenu.classList.remove("is-active");
+          navMenu.classList.remove("active");
+        }),
+      );
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Active navigation highlight
+      window.addEventListener("scroll", () => {
+        let current = "";
+        const sections = document.querySelectorAll("section");
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document
+        .querySelectorAll(".project-card, .timeline-item, .skill-category")
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(el);
+        });
     </script>
-    <script>
-        var sidemenu=document.getElementById('sidemenu');
-        const openmenu=()=>{
-            sidemenu.style.right= "0";
-        }
-        const closemenu=()=>{
-            sidemenu.style.right= "-200px";
-        }
-    </script>
-
-</body>
-
+  </body>
 </html>
