@@ -1009,6 +1009,18 @@ section {
     padding: 1.5rem;
   }
 
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .certification-card {
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
   .hero-content {
     gap: 1.5rem;
   }
