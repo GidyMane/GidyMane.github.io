@@ -855,12 +855,52 @@ I bring a results-oriented, agile approach to development, working closely with 
         <div class="crm-project">
           <div class="crm-project-layout">
             <div class="crm-screenshot-container">
-              <div class="crm-screenshot-placeholder">
-                <div class="screenshot-icon">
-                  <i class="fas fa-image"></i>
+              <div class="crm-visual-dashboard">
+                <div class="pipeline-header">
+                  <h4>Sales Pipeline Overview</h4>
                 </div>
-                <p class="screenshot-label">Salesforce CRM Dashboard</p>
-                <p class="screenshot-hint">Lead Pipeline & Workflow Automation</p>
+                <div class="pipeline-stages">
+                  <div class="pipeline-stage">
+                    <div class="stage-label">New</div>
+                    <div class="stage-count">24</div>
+                  </div>
+                  <div class="pipeline-arrow">→</div>
+                  <div class="pipeline-stage">
+                    <div class="stage-label">Contacted</div>
+                    <div class="stage-count">18</div>
+                  </div>
+                  <div class="pipeline-arrow">→</div>
+                  <div class="pipeline-stage">
+                    <div class="stage-label">Proposal</div>
+                    <div class="stage-count">12</div>
+                  </div>
+                  <div class="pipeline-arrow">→</div>
+                  <div class="pipeline-stage">
+                    <div class="stage-label">Closed-Won</div>
+                    <div class="stage-count">8</div>
+                  </div>
+                </div>
+                <div class="workflow-section">
+                  <h4>Key Automations</h4>
+                  <div class="workflow-items">
+                    <div class="workflow-item">
+                      <span class="workflow-trigger">Lead Created</span>
+                      <span class="workflow-arrow">→</span>
+                      <span class="workflow-action">Auto Assign by Region</span>
+                    </div>
+                    <div class="workflow-item">
+                      <span class="workflow-trigger">48h No Contact</span>
+                      <span class="workflow-arrow">→</span>
+                      <span class="workflow-action">Send Follow-up Email</span>
+                    </div>
+                    <div class="workflow-item">
+                      <span class="workflow-trigger">Proposal Sent</span>
+                      <span class="workflow-arrow">→</span>
+                      <span class="workflow-action">Create Task Reminder</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="dashboard-hint">Sample Screenshot Placeholder - Ready for integration</p>
               </div>
             </div>
 
@@ -900,6 +940,60 @@ I bring a results-oriented, agile approach to development, working closely with 
                   <li>Sales performance reporting</li>
                 </ul>
               </div>
+
+              <button class="crm-expand-btn" onclick="toggleDetails(this, 'salesforce-details')">
+                <i class="fas fa-chevron-down"></i> View Implementation Details
+              </button>
+
+              <div class="crm-details-panel" id="salesforce-details">
+                <div class="implementation-section">
+                  <h4>Automation Examples</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Lead Assignment Automation</p>
+                    <p class="example-desc">Automatically assigns new leads to sales reps based on region and industry specialization. Triggers welcome email and creates initial contact task within 1 hour of lead creation.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Follow-up Reminder System</p>
+                    <p class="example-desc">Creates automatic reminders for leads that haven't been contacted within 48 hours. Escalates to team lead if no action within 72 hours.</p>
+                  </div>
+                </div>
+
+                <div class="implementation-section">
+                  <h4>Pipeline Configuration</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Custom Pipeline Stages</p>
+                    <p class="example-desc">New → Contacted → Qualified → Proposal Sent → Negotiation → Closed-Won/Closed-Lost</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Probability Tracking</p>
+                    <p class="example-desc">Each stage has associated win probability percentages for revenue forecasting. Weighted pipeline reports show realistic revenue projections.</p>
+                  </div>
+                </div>
+
+                <div class="implementation-section">
+                  <h4>Email Templates</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Initial Contact Template</p>
+                    <p class="example-desc">Personalized greeting with company research, value proposition, and clear call-to-action for initial meeting scheduling.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Onboarding Sequence</p>
+                    <p class="example-desc">5-email automated sequence for new clients including welcome, setup guide, success tips, and check-in. Sends over 2 weeks at intervals.</p>
+                  </div>
+                </div>
+
+                <div class="implementation-section">
+                  <h4>Workflow Triggers</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Subscription Payment Trigger</p>
+                    <p class="example-desc">When payment is received, creates renewal reminder task for 30 days before expiration and sends renewal request 14 days prior.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Deal Closure Workflow</p>
+                    <p class="example-desc">Updates revenue forecast, creates onboarding task, sends congratulation email, and initiates success plan workflow.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -908,12 +1002,52 @@ I bring a results-oriented, agile approach to development, working closely with 
         <div class="crm-project">
           <div class="crm-project-layout">
             <div class="crm-screenshot-container">
-              <div class="crm-screenshot-placeholder">
-                <div class="screenshot-icon">
-                  <i class="fas fa-image"></i>
+              <div class="crm-visual-dashboard">
+                <div class="pipeline-header">
+                  <h4>Support Ticket Pipeline</h4>
                 </div>
-                <p class="screenshot-label">Zoho CRM Dashboard</p>
-                <p class="screenshot-hint">Support Pipeline & Ticket Escalation</p>
+                <div class="pipeline-stages">
+                  <div class="pipeline-stage">
+                    <div class="stage-label">Opened</div>
+                    <div class="stage-count">32</div>
+                  </div>
+                  <div class="pipeline-arrow">→</div>
+                  <div class="pipeline-stage">
+                    <div class="stage-label">In Progress</div>
+                    <div class="stage-count">19</div>
+                  </div>
+                  <div class="pipeline-arrow">→</div>
+                  <div class="pipeline-stage">
+                    <div class="stage-label">Resolved</div>
+                    <div class="stage-count">15</div>
+                  </div>
+                  <div class="pipeline-arrow">→</div>
+                  <div class="pipeline-stage">
+                    <div class="stage-label">Closed</div>
+                    <div class="stage-count">28</div>
+                  </div>
+                </div>
+                <div class="workflow-section">
+                  <h4>Escalation Rules</h4>
+                  <div class="workflow-items">
+                    <div class="workflow-item">
+                      <span class="workflow-trigger">Ticket Created</span>
+                      <span class="workflow-arrow">→</span>
+                      <span class="workflow-action">Assign to Support Agent</span>
+                    </div>
+                    <div class="workflow-item">
+                      <span class="workflow-trigger">No Update 48h</span>
+                      <span class="workflow-arrow">→</span>
+                      <span class="workflow-action">Escalate to Manager</span>
+                    </div>
+                    <div class="workflow-item">
+                      <span class="workflow-trigger">Status: Resolved</span>
+                      <span class="workflow-arrow">→</span>
+                      <span class="workflow-action">Send Survey & Notify</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="dashboard-hint">Sample Screenshot Placeholder - Ready for integration</p>
               </div>
             </div>
 
@@ -953,6 +1087,60 @@ I bring a results-oriented, agile approach to development, working closely with 
                   <li>Workflow configuration and optimization</li>
                   <li>Team efficiency and performance tracking</li>
                 </ul>
+              </div>
+
+              <button class="crm-expand-btn" onclick="toggleDetails(this, 'zoho-details')">
+                <i class="fas fa-chevron-down"></i> View Implementation Details
+              </button>
+
+              <div class="crm-details-panel" id="zoho-details">
+                <div class="implementation-section">
+                  <h4>Automation Examples</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Ticket Assignment Automation</p>
+                    <p class="example-desc">Routes tickets to appropriate support agents based on skill tags, department, and current workload. Prioritizes critical issues to senior support staff.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Escalation Trigger System</p>
+                    <p class="example-desc">Automatically escalates tickets to manager if unresolved after 48 hours. Sends urgent notifications and adds high-priority flag.</p>
+                  </div>
+                </div>
+
+                <div class="implementation-section">
+                  <h4>Pipeline Configuration</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Support Ticket Pipeline</p>
+                    <p class="example-desc">Ticket Opened → In Progress → Pending Customer → Resolved → Closed. Each stage has SLA timelines for tracking compliance.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Sales Pipeline (Parallel)</p>
+                    <p class="example-desc">Prospect → Evaluation → Quote Sent → Negotiation → Closed. Shared dashboard view with support metrics.</p>
+                  </div>
+                </div>
+
+                <div class="implementation-section">
+                  <h4>Email Templates</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Ticket Acknowledgment</p>
+                    <p class="example-desc">Automatically sent within 15 minutes of ticket creation. Includes ticket ID, expected resolution time, and agent contact information.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Resolution Notification</p>
+                    <p class="example-desc">Sent when ticket marked as resolved. Includes satisfaction survey link, knowledge base article, and follow-up contact method.</p>
+                  </div>
+                </div>
+
+                <div class="implementation-section">
+                  <h4>Workflow Automation</h4>
+                  <div class="implementation-example">
+                    <p class="example-title">Auto-Reminder Tasks</p>
+                    <p class="example-desc">Creates daily task reminders for pending tickets. Sends Slack notifications for overdue items at 9am and 2pm.</p>
+                  </div>
+                  <div class="implementation-example">
+                    <p class="example-title">Satisfaction Survey Workflow</p>
+                    <p class="example-desc">When ticket closed, sends CSAT survey. Low scores trigger manager review and trigger follow-up call workflow.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1087,6 +1275,13 @@ I bring a results-oriented, agile approach to development, working closely with 
     </footer>
 
     <script>
+      // CRM Details Toggle Function
+      function toggleDetails(button, panelId) {
+        const panel = document.getElementById(panelId);
+        button.classList.toggle("expanded");
+        panel.classList.toggle("visible");
+      }
+
       // Mobile menu toggle
       const mobileMenu = document.getElementById("mobile-menu");
       const navMenu = document.getElementById("nav-menu");
