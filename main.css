@@ -744,6 +744,32 @@ section {
   justify-content: center;
 }
 
+.crm-screenshot-image {
+  width: 100%;
+  height: auto;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.crm-screenshot-image:hover {
+  border-color: #4f46e5;
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.15);
+  transform: translateY(-2px);
+}
+
+.automation-screenshot-section {
+  background: white;
+  padding: 1.5rem 0;
+  border-top: 2px solid #e5e7eb;
+  margin-top: 1.5rem;
+}
+
+.automation-screenshot-section .crm-section-title {
+  margin-bottom: 1.5rem;
+}
+
 .crm-visual-dashboard {
   width: 100%;
   background: white;
@@ -1424,6 +1450,16 @@ section {
     font-size: 1.3rem;
   }
 
+  .crm-screenshot-image {
+    border-radius: 8px;
+    border-width: 1px;
+  }
+
+  .automation-screenshot-section {
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
   .crm-visual-dashboard {
     padding: 1.5rem;
   }
@@ -1618,6 +1654,20 @@ section {
   .crm-features,
   .crm-use-cases {
     padding: 1.25rem;
+  }
+
+  .crm-screenshot-image {
+    border-width: 1px;
+  }
+
+  .automation-screenshot-section {
+    padding: 0.75rem 0;
+    margin-top: 0.75rem;
+  }
+
+  .automation-screenshot-section .crm-section-title {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
   }
 
   .crm-visual-dashboard {
